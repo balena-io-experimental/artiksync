@@ -1,0 +1,6 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-alpine-python:latest
+
+WORKDIR /app
+COPY . ./
+
+CMD /app/app.py
